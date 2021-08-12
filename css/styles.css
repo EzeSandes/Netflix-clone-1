@@ -97,10 +97,14 @@ header {
 }
 
 .hero-form {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+
+  text-align: center;
+  max-width: 86rem;
+  margin: 0 auto;
 }
 
 .hero-form--title {
@@ -134,6 +138,7 @@ header {
 
 .section-watch {
   padding: 7rem 4.5rem;
+  margin-bottom: 10rem;
   background-color: var(--c-black-first);
 }
 
@@ -178,4 +183,81 @@ header {
 
 .profile-kids .story-card-text {
   width: 60%;
+}
+
+/********************************
+******* QUESTIONS SECTION  *****
+*********************************/
+
+.section-questions {
+  padding: 0 4.5rem 7rem 4.5rem;
+  margin-bottom: 10rem;
+}
+
+.questions-title {
+  padding: 1rem 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+}
+
+.questions {
+  max-width: 70%;
+  margin: 0 auto 8rem auto;
+  gap: 0.8rem;
+}
+
+.question-item {
+  background-color: var(--c-grey-2);
+  border-radius: 2px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* border-bottom: 2px solid var(--c-black-first); */
+  padding: 2rem 3rem;
+
+  cursor: pointer;
+}
+
+.question-title,
+.answer {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.question-icon {
+  font-size: 4rem;
+}
+
+.answer-box {
+  padding: 4rem 3rem;
+  line-height: 1.2;
+}
+
+.answer-box p {
+  margin-bottom: 3rem;
+}
+
+.answer-box p:last-child {
+  margin-bottom: 0rem;
+}
+
+.answer-closed {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.answer-opened {
+  max-height: 120rem;
+  overflow: visible;
+  border-top: 2px solid var(--c-black-first);
+
+  /* Transition to OPEN the tab */
+  transition: max-height 0.3s ease-out;
 }
