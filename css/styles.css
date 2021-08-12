@@ -1,0 +1,138 @@
+:root {
+  --c-main-red: #f40612;
+  --c-red-second: #e50914;
+  --c-black-first: #000;
+  --c-main-grey: #222;
+  --c-grey-2: #303030;
+  --c-grey-3: #757575;
+  --c-main-white: #fff;
+}
+
+/********************************
+******* HEADER   *****
+*********************************/
+
+.svg-icon-netflix-logo {
+  fill: var(--c-main-red);
+  height: 4.5rem;
+}
+
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/********************************
+******* NAVIGATION  *****
+*********************************/
+
+.header-nav {
+  width: 100%;
+  height: auto;
+
+  padding: 2.5rem 5.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.languajes {
+  padding: 0.8rem 2.2rem;
+  font-size: 1.6rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--c-main-white);
+}
+
+.languajes option {
+  color: var(--c-main-grey);
+}
+
+/********************************
+******* HEADER  *****
+*********************************/
+
+header {
+  height: 100vh;
+
+  /* background: no-repeat center/cover
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/e879700c-2c0f-4208-9142-3e1718756811/AR-en-20210719-popsignuptwoweeks-perspective_alpha_website_large.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/e879700c-2c0f-4208-9142-3e1718756811/AR-en-20210719-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: cover;
+  box-shadow: inset 12rem 10rem 25rem #000, inset -12rem -10rem 25rem #000;
+}
+
+.section-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 400;
+  text-align: center;
+}
+
+.container-header {
+  width: 72rem;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  margin: 1.5rem 2rem 5rem 2rem;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.hero-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-form--title {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  height: 7rem;
+  width: 100%;
+}
+
+.form--input {
+  width: 62%;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+.form--input::placeholder {
+  opacity: 0.8;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+/********************************
+******* WATCH SECTION  *****
+*********************************/
+
+.section-watch {
+  padding: 7rem 4.5rem;
+  background-color: var(--c-black-first);
+}

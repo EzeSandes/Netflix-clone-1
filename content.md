@@ -23,4 +23,9 @@
 ## Fonts
 
 'Helvetica Neue',Helvetica,Arial,sans-serif;
-Size: 400, 500, 700
+Size: 300, 400, 500, 700
+
+## Whitespace
+
+- Spacing system (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
