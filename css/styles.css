@@ -6,6 +6,7 @@
   --c-grey-2: #303030;
   --c-grey-3: #757575;
   --c-main-white: #fff;
+  --px-border-width: 8px;
 }
 
 /********************************
@@ -68,6 +69,8 @@ header {
     url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/e879700c-2c0f-4208-9142-3e1718756811/AR-en-20210719-popsignuptwoweeks-perspective_alpha_website_large.jpg");
   background-size: cover;
   box-shadow: inset 12rem 10rem 25rem #000, inset -12rem -10rem 25rem #000;
+
+  border-bottom: var(--px-border-width) solid var(--c-main-grey);
 }
 
 .section-hero {
@@ -138,8 +141,8 @@ header {
 
 .section-watch {
   padding: 7rem 4.5rem;
-  margin-bottom: 10rem;
-  background-color: var(--c-black-first);
+  margin-bottom: 7rem;
+  border-bottom: var(--px-border-width) solid var(--c-main-grey);
 }
 
 .watch-items {
@@ -156,6 +159,7 @@ header {
 .story-card-text h2 {
   font-size: 5rem;
   letter-spacing: 0.3rem;
+  line-height: 1.2;
   margin-bottom: 2.5rem;
 }
 
@@ -191,7 +195,7 @@ header {
 
 .section-questions {
   padding: 0 4.5rem 7rem 4.5rem;
-  margin-bottom: 10rem;
+  border-bottom: var(--px-border-width) solid var(--c-main-grey);
 }
 
 .questions-title {
@@ -218,7 +222,6 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  /* border-bottom: 2px solid var(--c-black-first); */
   padding: 2rem 3rem;
 
   cursor: pointer;
@@ -260,4 +263,28 @@ header {
 
   /* Transition to OPEN the tab */
   transition: max-height 0.3s ease-out;
+}
+
+/********************************
+******* FOOTER SECTION  *****
+*********************************/
+
+.footer {
+  color: var(--c-grey-3);
+  font-weight: 300;
+  font-size: 1.4rem;
+
+  gap: 4rem;
+}
+
+.section-footer .grid-col-4 {
+  gap: 2rem;
+}
+
+.grid-footer--list {
+  gap: 2rem;
+}
+
+.section-footer .languajes {
+  margin-bottom: 2rem;
 }

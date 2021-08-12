@@ -21,6 +21,21 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  color: var(--c-grey-3);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
 .container,
 .container-1k {
   margin: 0 auto;
@@ -31,9 +46,12 @@ img {
   max-width: 1200px;
 }
 
-.container-1k {
+.container-footer {
   max-width: 1000px;
+  margin: 0 auto;
+  padding: 7rem 7rem;
 }
+
 /****************************/
 /********** flex ***********/
 /****************************/
@@ -53,6 +71,10 @@ img {
 
 .grid-col-2 {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /****************************/
@@ -111,9 +133,5 @@ img {
 }
 
 /****************************/
-/********** LIST ***********/
+/********** ***********/
 /****************************/
-
-ul {
-  list-style: none;
-}
