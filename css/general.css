@@ -16,12 +16,24 @@ body {
   color: #fff;
 }
 
-.container {
-  max-width: 1200px;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container,
+.container-1k {
   margin: 0 auto;
   padding: 0 0.3rem;
 }
 
+.container {
+  max-width: 1200px;
+}
+
+.container-1k {
+  max-width: 1000px;
+}
 /****************************/
 /********** flex ***********/
 /****************************/
@@ -29,6 +41,18 @@ body {
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+/****************************/
+/********** BTN ***********/
+/****************************/
+
+.grid {
+  display: grid;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /****************************/

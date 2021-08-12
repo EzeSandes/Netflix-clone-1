@@ -136,3 +136,46 @@ header {
   padding: 7rem 4.5rem;
   background-color: var(--c-black-first);
 }
+
+.watch-items {
+  column-gap: 2rem;
+  row-gap: 8rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.story-card-text {
+  max-width: 100%;
+}
+
+.story-card-text h2 {
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.story-card-text h3 {
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+.story-card-img {
+  width: 80%;
+}
+
+.profile-kids {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+.profile-kids .story-card-img {
+  width: 40%;
+}
+
+.profile-kids .story-card-text {
+  width: 60%;
+}
