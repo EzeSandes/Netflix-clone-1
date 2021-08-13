@@ -52,10 +52,34 @@
   color: var(--c-main-white);
 }
 
+.languajes-box {
+  position: relative;
+}
+
 .languajes option {
   color: var(--c-main-grey);
 }
 
+.caret-down-icon,
+.word-icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+/* POINTER EVENTS
+The element is never the target of pointer events; however, pointer events may target its descendant elements if those descendants have pointer-events set to some other value. In these circumstances, pointer events will trigger event listeners on this parent element as appropriate on their way to/from the descendant during the event capture/bubble phases.
+*/
+
+.word-icon {
+  left: 11%;
+  font-size: 1.8rem;
+}
+
+.caret-down-icon {
+  right: -7%;
+  font-size: 1.9rem;
+}
 /********************************
 ******* HEADER  *****
 *********************************/
@@ -170,7 +194,34 @@ header {
 }
 
 .story-card-img {
-  width: 80%;
+  width: 85%;
+}
+
+/* .story-card-video {
+  position: relative;
+} */
+
+.story-card-video--box {
+  position: relative;
+}
+
+.story-card-video--1,
+.story-card-video--2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: auto;
+  z-index: -1;
+}
+
+.story-card-video--1 {
+  top: 48%;
+  left: 42%;
+  width: 62%;
+}
+.story-card-video--2 {
+  top: 33%;
+  left: 42%;
+  width: 55%;
 }
 
 .profile-kids {
@@ -285,6 +336,10 @@ header {
   gap: 2rem;
 }
 
-.section-footer .languajes {
-  margin-bottom: 2rem;
+.section-footer .languajes-box {
+  display: inline-block;
+}
+
+.netflix--country {
+  margin-top: 2rem;
 }

@@ -37,10 +37,17 @@
           <span class="screen-reader-text">Netflix</span>
         </a>
         <div class="header-box">
-          <select name="languajes" id="languajes" class="languajes">
-            <option value="english">English</option>
-            <option value="spanish">Spanish</option>
-          </select>
+          <div class="languajes-box">
+            <ion-icon class="word-icon" name="globe-outline"></ion-icon>
+            <select name="languajes" id="languajes" class="languajes">
+              <option value="english">English</option>
+              <option value="spanish">Spanish</option>
+            </select>
+            <ion-icon
+              class="caret-down-icon"
+              name="caret-down-outline"
+            ></ion-icon>
+          </div>
           <button class="btn btn-sign">Sign in</button>
         </div>
       </nav>
@@ -83,11 +90,22 @@
               Blu-ray players, and more.
             </h3>
           </div>
-          <img
-            class="story-card-img"
-            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
-            alt="TV watching Netflix interface"
-          />
+          <div class="story-card-video">
+            <div class="story-card-video--box">
+              <img
+                class="story-card-img"
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                alt="TV watching Netflix interface"
+              />
+              <video class="story-card-video--1" autoplay muted loop>
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
           <img
             class="story-card-img"
             src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
@@ -106,11 +124,22 @@
               laptop, and TV without paying more.
             </h3>
           </div>
-          <img
-            class="story-card-img"
-            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
-            alt="Smarthphone, iMac and tablet with series"
-          />
+          <div class="story-card-video">
+            <div class="story-card-video--box">
+              <img
+                class="story-card-img"
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+                alt="Smarthphone, iMac and tablet with series"
+              />
+              <video class="story-card-video--2" autoplay muted loop>
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
           <div class="profile-kids">
             <img
               class="story-card-img"
@@ -302,13 +331,18 @@
           </ul>
         </div>
         <div>
-          <div>
+          <div class="languajes-box">
+            <ion-icon class="word-icon" name="globe-outline"></ion-icon>
             <select name="languajes" id="languajes" class="languajes">
               <option value="english">English</option>
               <option value="spanish">Spanish</option>
             </select>
+            <ion-icon
+              class="caret-down-icon"
+              name="caret-down-outline"
+            ></ion-icon>
           </div>
-          <p>Netflix Argentina</p>
+          <p class="netflix--country">Netflix Argentina</p>
         </div>
       </div>
     </footer>
