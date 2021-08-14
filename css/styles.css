@@ -77,7 +77,7 @@ The element is never the target of pointer events; however, pointer events may t
 }
 
 .caret-down-icon {
-  right: -7%;
+  right: -7.5%;
   font-size: 1.9rem;
 }
 /********************************
@@ -304,7 +304,8 @@ header {
 .answer-closed {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 5s ease-out;
+  transition: border-top 0.3s ease-out;
 }
 
 .answer-opened {
@@ -313,7 +314,7 @@ header {
   border-top: 2px solid var(--c-black-first);
 
   /* Transition to OPEN the tab */
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 
 /********************************
