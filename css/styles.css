@@ -333,6 +333,10 @@ header {
   gap: 2rem;
 }
 
+.section-footer .languajes-box {
+  color: var(--c-main-white);
+}
+
 .grid-footer--list {
   gap: 2rem;
 }

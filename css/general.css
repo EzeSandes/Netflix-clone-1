@@ -36,14 +36,14 @@ a:active {
   text-decoration: underline;
 }
 
+.container {
+  max-width: 1200px;
+}
+
 .container,
 .container-1k {
   margin: 0 auto;
   padding: 0 0.3rem;
-}
-
-.container {
-  max-width: 1200px;
 }
 
 .container-footer {

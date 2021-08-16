@@ -1,0 +1,182 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/**************************/
+/* BELOW 900px (Tablets) */
+/**************************/
+
+@media (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-hero {
+    width: 90%;
+  }
+
+  .container-header {
+    width: 100%;
+  }
+
+  .caret-down-icon {
+    right: -6%;
+  }
+
+  .input-box {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .form--input {
+    width: 80%;
+    padding: 2.2rem 2rem;
+  }
+
+  .btn-start {
+    min-height: 6rem;
+  }
+
+  .grid-col-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .watch-items {
+    row-gap: 3rem;
+    text-align: center;
+  }
+
+  .story-card-video--box {
+    top: -8rem;
+    z-index: -1;
+  }
+
+  .story-card-video--1,
+  .story-card-video--2 {
+    left: 50%;
+  }
+
+  .story-download {
+    grid-row: 3;
+  }
+
+  .story-download-img {
+    position: relative;
+    top: -9rem;
+    z-index: -1;
+  }
+
+  .story-video-2 {
+    position: relative;
+    top: 6rem;
+  }
+
+  .profile-kids {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .profile-kids .story-card-img {
+    width: 75%;
+  }
+
+  .profile-kids .story-card-text {
+    width: 95%;
+  }
+
+  .section-questions {
+    padding: 0 4.5rem 14rem 4.5rem;
+  }
+
+  .questions {
+    max-width: 90%;
+  }
+}
+
+/**************************/
+/* BELOW 625px (Smaller Tablets)  */
+/**************************/
+/* 628px / 16px = 40em*/
+@media (max-width: 39em) {
+  .questions {
+    max-width: 100%;
+  }
+
+  .story-download-img {
+    top: -7rem;
+  }
+
+  .grid-col-4 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .grid-footer--list {
+    grid-column: span 3;
+  }
+}
+
+/**************************/
+/* BELOW 480px (phones)  */
+/**************************/
+@media (max-width: 30em) {
+  html {
+    font-size: 44%;
+  }
+
+  .header-nav {
+    padding: 1.5rem 1.6rem;
+  }
+
+  .caret-down-icon {
+    right: -4%;
+  }
+
+  .hero-form {
+    max-width: 50rem;
+  }
+
+  .form--input {
+    width: 100%;
+  }
+
+  .story-card-video--box,
+  .story-download-img {
+    top: -5rem;
+  }
+
+  .story-video-2 {
+    top: 2rem;
+  }
+
+  .profile-kids .story-card-img {
+    width: 100%;
+  }
+
+  .section-questions {
+    padding: 0 0 14rem 0;
+  }
+
+  .footer {
+    font-size: 2rem;
+  }
+
+  .container-footer {
+    padding: 7rem 2rem;
+  }
+}
+
+/**************************/
+/* BELOW 320px (Smaller phones)  */
+/**************************/
+/* 320px / 16px = 20em */
+@media (max-width: 20em) {
+  .svg-icon-netflix-logo {
+    height: 2.5rem;
+  }
+
+  .header-box {
+    gap: 1rem;
+  }
+}
